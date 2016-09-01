@@ -1,0 +1,20 @@
+%responsive-video-wrap {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+%responsive-video {
+    @include position(absolute, 0 null null 0);
+    @include size(100%);
+}
+
+%image-block {
+    display: block;
+    max-width: 100%;
+}
+
+%cover-img {
+    background-position: center;
+    background-size: cover;
+}
