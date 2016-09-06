@@ -12,7 +12,7 @@
         <base href="/">
         <!-- @if PRODUCTION='false' -->
         <script src="bower_components/angular/angular.js"></script>
-        <!-- @endif -->        
+        <!-- @endif -->
         <!-- @if TESTING='true' -->
         <link
             href="_build/app.css"
@@ -70,7 +70,7 @@
                 Please enable JavaScript on your browser or upgrade to <a href="http://www.google.com/chrome/" target="_blank">Google Chrome</a> to use Base Angular.
             </div>
         </noscript>
-        <div header></div>
+        <!-- <div header></div> -->
         <div ui-view></div>
         <!-- @if PRODUCTION='true' -->
             <!-- @if TESTING='true' -->
@@ -97,12 +97,14 @@
         <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
         <!-- end bower_components -->
         <script src="app.js"></script>
+        <script src="assets/js/wave.js"></script>
         <!-- state scripts -->
         <script src="states/home/home.js"></script>
         <!-- end state scripts -->
         <!-- component scripts -->
         <script src="components/header/header.js"></script>
-        <!-- end component scripts -->        
+        <script src="components/wave/wave.js"></script>
+        <!-- end component scripts -->
         <!-- @endif -->
     </body>
 </html>
