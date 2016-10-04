@@ -1,0 +1,71 @@
+.boat {
+    @include transition(all 4s ease-in-out);
+    transform: scale(1);
+    // max-width: 80vw;
+    // max-height: 80vh;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: rock 3s infinite;
+    z-index: 0;
+}
+
+.panels {
+  transition: opacity 3s;
+  opacity: 1;
+}
+
+.zoom {
+  transition: all 4s ease-in-out;
+  transform: scale(1.5);
+  width: 100vw;
+  height: 100vh;
+  //animation: rockSlow 10s infinite;
+  position: relative;
+  z-index: 10;
+
+  .boat {
+     bottom: 80px;
+   }
+
+  .panels {
+      opacity: 0;
+  }
+}
+
+@keyframes rock {
+  0% {
+    @include transform(rotate(-6deg));
+  }
+  50% {
+    @include transform(rotate(3deg));
+  }
+  100% {
+    @include transform(rotate(-6deg));
+  }
+}
+
+@keyframes rockSlow {
+  0% {
+    @include transform(rotate(-2deg));
+  }
+  50% {
+    @include transform(rotate(1deg));
+  }
+  100% {
+    @include transform(rotate(-2deg));
+  }
+}
+
+@keyframes panelDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
