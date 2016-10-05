@@ -19,6 +19,7 @@
     "neat": "1.7.4",
     "scrollreveal": "3.1.4",
     "slick-carousel": "1.5.9",
-    "underscore": "1.8.3"
+    "underscore": "1.8.3",
+    "moment": "^2.15.1"
   }
 }
